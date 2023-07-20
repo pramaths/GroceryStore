@@ -10,7 +10,7 @@ Add .env file where MONGO_URI=mongodb+srv://pramaths848:MdNy3gukvjpzydQe@twitter
 ## How to run:
 docker-compose build 
 docker-compose up
-
+## It handles all the edges and I mentioned those in video
 Upon running go to localhost:3000 to check success status.
 ## video link:https://drive.google.com/file/d/1Jw0_ue9ZacAewRLG1ox2G2_o6OLUkQP8/view?usp=sharing
 Then you can try api in postman or any related things like thunder client:
