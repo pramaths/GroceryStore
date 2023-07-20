@@ -1,0 +1,16 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    environment:
+      - MONGO_URI=mongodb+srv://pramaths848:MdNy3gukvjpzydQe@twitter.t29mhxx.mongodb.net/Assignment?retryWrites=true&w=majority
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo
+    volumes:
+      - ./data:/data/db
