@@ -76,9 +76,9 @@ Response:
 success: A boolean indicating the success status.
 items: An array of item objects.
 
-##ItemType
-1)Create a new item type
-Endpoint: POST /api/createItemType
+## ItemType
+## 1)Create a new item type
+## Endpoint: POST /api/createItemType
 
 Description: Create a new item type with the provided details.
 
@@ -89,8 +89,8 @@ Request Body:{
 Response:
 
 NewItemType: The created item type object.
-2)Rename an item type
-Endpoint: PUT /api/renameItemType/:id
+## 2)Rename an item type
+## Endpoint: PUT /api/renameItemType/:id
 
 Description: Rename an existing item type.
 
@@ -103,8 +103,8 @@ Request Body:{
 Response:
 
 existingType: The updated item type object.
-3)Delete an item type
-Endpoint: DELETE /api/deleteItemType/:id
+## 3)Delete an item type
+## Endpoint: DELETE /api/deleteItemType/:id
 
 Description: Delete an existing item type by its ID.
 
@@ -116,9 +116,9 @@ Response:
 message: A success message indicating that the item type was deleted.
 existingType: The deleted item type object.
 
-#Item
-1)Relocate an item to a new storage space
-Endpoint: POST /api/relocateItem
+## Item
+## 1)Relocate an item to a new storage space
+## Endpoint: POST /api/relocateItem
 
 Description: Relocate an existing item to a new storage space.
 
@@ -131,8 +131,8 @@ success: A success message indicating that the item was relocated.
 item: The updated item object after relocation.
 destinationStorageName: The name of the destination storage space.
 
-2)Delete an item
-Endpoint: DELETE /api/deleteItem/:id
+## 2)Delete an item
+## Endpoint: DELETE /api/deleteItem/:id
 
 Description: Delete an existing item by its ID.
 
@@ -143,8 +143,8 @@ Response:
 
 success: A boolean indicating the success status.
 item: The deleted item object.
-3) Change an item
-Endpoint: PUT /api/changeItem/:id
+## 3) Change an item
+## Endpoint: PUT /api/changeItem/:id
 
 Description: Change an existing item by its ID.
 
@@ -160,12 +160,12 @@ Request Body:
 Response:
 success: A success message indicating that the item was changed.
 
-4)## Get all items (Paginated)
-#Endpoint: GET /api/getAllItems
+## 4)Get all items (Paginated)
+## Endpoint: GET /api/getAllItems
 
-##Description: Get a paginated list of all items.
+Description: Get a paginated list of all items.
 
-##Parameters:
+Parameters:
 
 page (optional): The page number (default: 1).
 pageSize (optional): The number of items per page (default: 4).
