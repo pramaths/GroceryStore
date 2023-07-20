@@ -14,11 +14,11 @@ docker-compose up
 Upon running go to localhost:3000 to check success status.
 ## video link:https://drive.google.com/file/d/1Jw0_ue9ZacAewRLG1ox2G2_o6OLUkQP8/view?usp=sharing
 Then you can try api in postman or any related things like thunder client:
-API ENDPOINTS
-#StorageSpace
-1)## Create a new storage space:
+# API ENDPOINTS
+# StorageSpace
+## 1)Create a new storage space:
 ## Endpoint: POST /api/createstorage
-##Description: Create a new storage space with the provided details.
+Description: Create a new storage space with the provided details.
 {
   "name": "Storage Space Name",
   "maxLimit": 100,
@@ -27,8 +27,9 @@ API ENDPOINTS
 Response:
 
 NewStorageSpace: The created storage space object.
-2)Rename a storage space
-Endpoint: PUT /api/renamestorage/:oldname
+
+## 2)Rename a storage space
+## Endpoint: PUT /api/renamestorage/:oldname
 
 Description: Rename an existing storage space.
 {
@@ -50,8 +51,8 @@ Response:
 
 existingType: The updated storage space object.
 
-3)Delete a storage space
-Endpoint: DELETE /api/deletestorage/:id
+## 3)Delete a storage space
+## Endpoint: DELETE /api/deletestorage/:id
 
 Description: Delete an existing storage space by its ID.
 
@@ -62,8 +63,8 @@ Response:
 
 success: A success message indicating that the storage space was deleted.
 storagespace: The deleted storage space object.
-4)Get all items in a storage space
-Endpoint: GET /api/getallitems/:id
+## 4)Get all items in a storage space
+## Endpoint: GET /api/getallitems/:id
 
 Description: Get a list of all items in a storage space by its ID.
 
@@ -75,7 +76,7 @@ Response:
 success: A boolean indicating the success status.
 items: An array of item objects.
 
-#ItemType
+##ItemType
 1)Create a new item type
 Endpoint: POST /api/createItemType
 
