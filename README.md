@@ -12,13 +12,21 @@ docker-compose build
 docker-compose up
 
 Upon running go to localhost:3000 to check success status.
- ##video link:https://drive.google.com/file/d/1Jw0_ue9ZacAewRLG1ox2G2_o6OLUkQP8/view?usp=sharing
+## video link:https://drive.google.com/file/d/1Jw0_ue9ZacAewRLG1ox2G2_o6OLUkQP8/view?usp=sharing
 Then you can try api in postman or any related things like thunder client:
 API ENDPOINTS
 #StorageSpace
 1)## Create a new storage space:
 ## Endpoint: POST /api/createstorage
 ##Description: Create a new storage space with the provided details.
+{
+  "name": "Storage Space Name",
+  "maxLimit": 100,
+  "refrigerate": 50
+}
+Response:
+
+NewStorageSpace: The created storage space object.
 2)Rename a storage space
 Endpoint: PUT /api/renamestorage/:oldname
 
